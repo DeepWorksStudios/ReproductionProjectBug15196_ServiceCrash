@@ -107,7 +107,7 @@ public class ForegroundService : Service
         if (Build.VERSION.SdkInt < BuildVersionCodes.O) return null;
 
         var notificationBuilder = new Notification.Builder(this, CHANNEL_ID)
-        .SetSmallIcon(Resource.Drawable.notification_icon_background)
+        .SetSmallIcon(Microsoft.Maui.Resource.Drawable.notification_icon_background)
         .SetContentTitle("Foreground Service Title")
         .SetContentText("Foreground Service Description")
         .SetOngoing(true)
